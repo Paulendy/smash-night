@@ -148,3 +148,19 @@ export default function App() {
   );
 }
 
+export function ErrorBoundary({ error }: any) {
+  console.error(error);
+  return (
+    <html>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        {error.toString()}
+        <Scripts />
+      </body>
+    </html>
+  );
+}
