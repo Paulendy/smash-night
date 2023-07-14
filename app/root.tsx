@@ -138,7 +138,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Header />
+        {/* <Header /> */}
         <Outlet />
         <ScrollRestoration />
         <Scripts />
